@@ -1,11 +1,11 @@
 if (window.cmsData.qacodes!=0)
 {
 
-$.getScript("./highlighttextarea.js", function( data, textStatus, jqxhr ) {
+$.getScript("https://github.com/codak2/codeMatch/blob/main/highlighttextarea.js", function( data, textStatus, jqxhr ) {
   //console.log("loaded"); // Data returned
 });
 
-$.getScript("./buttonstrip.min.js", function( data, textStatus, jqxhr ) {
+$.getScript("https://github.com/codak2/codeMatch/blob/main/buttonstrip.min.js", function( data, textStatus, jqxhr ) {
   //console.log("loaded button script"); // Data returned
   var instance = new ButtonStrip({
     id: 'mybutton'
@@ -23,9 +23,9 @@ instance.append('#switchbutton');
 });
 
 
-$('head').append('<link rel="stylesheet" type="text/css" href="./highlighttextarea.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="https://github.com/codak2/codeMatch/blob/main/highlighttextarea.css">');
 
-$('head').append('<link rel="stylesheet" type="text/css" href="./compareTXT_2.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="https://github.com/codak2/codeMatch/blob/main/compareTXT_2.css">');
 
 var htmlappend="<br/><br/><br/><br/><br/><br/><table><tr><td style='text-align:left'><div id='switchbutton'></div></td><td><span id='showdataCont'><input type='checkbox' id='showdata'>Show data</input></span></td></tr><tr><td><table id='toolCont'><tr><td valign='bottom' style='padding:10px'><div style='width:150px'>Legend:<div style='background-color:#ff6666'>Not found</div><div style='background-color:#42c8f5'>Found partial match</div><div style='background-color:#81f542'>Found</div><div style='background-color:#f5a742'>Found more than once</div></div></td><td><textarea type='text' id='pastetxt' rows='25'></textarea></td></tr></table></td><td><table id='toolContCodes'><tr><td width='300px'><textarea type='text' id='pastetxtCodes' rows='25'></textarea></td><td width='20px'></td><td valign='top'><div id='rescodes'></div></td></tr></table></td></tr></table>"
 if ($('.footer').length>0) {$('.footer').append(htmlappend)}
