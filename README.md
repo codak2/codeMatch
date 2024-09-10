@@ -3,6 +3,9 @@
 
 ## How to use
 - Add "User javascript and CSS" extension in browser
+```
+https://chromewebstore.google.com/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld
+```
 - Add below code in that extension
 ```javascript
 function minclude(filename) {
