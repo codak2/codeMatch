@@ -16,8 +16,12 @@ function minclude(filename) {
 	head.appendChild(script);
 }
 $(document).ready(function () {
+	// For Decipher
 	minclude('https://ssiprojects.s3.amazonaws.com/ssiconsultancy/Tests/JSadi/compareTXT_2a.js');
-	//minclude('https://github.com/codak2/codeMatch/blob/main/codeMatch_compareTXT_2a.js');
+	//minclude('https://github.com/codak2/compareTXT/blob/main/compareTXT_Decipher.js');
+	// For CMIX
+	minclude("https://ssiprojects.s3.amazonaws.com/ssiconsultancy/Tests/JSadi/compareTXT_CMIX.js");
+	//minclude('https://github.com/codak2/compareTXT/blob/main/compareTXT_CMIX.js');
 });
 
 ```
